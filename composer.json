@@ -1,0 +1,30 @@
+{
+    "name": "umairparacha00/laravel-pepipost-mailer",
+    "description": "This package will add pepipost as a mailer in laravel",
+    "keywords": ["laravel", "Pepipost", "mailer", "driver"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Umair Raza",
+            "email": "umairparacha0047@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.37"
+    },
+    "autoload": {
+        "psr-4": {
+            "UmairParacha00\\LaravelPepipostMailer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UmairParacha00\\LaravelPepipostMailer\\PepipostMailServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
